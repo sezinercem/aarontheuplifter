@@ -407,6 +407,10 @@ textarea {
 }
 
 @media (max-width: 860px) {
+  .header {
+    padding: 0.9rem 1rem;
+  }
+
   .menu-toggle {
     display: block;
   }
@@ -429,6 +433,50 @@ textarea {
     display: flex;
   }
 
+  .hero {
+    min-height: calc(100svh - 68px);
+    align-items: end;
+    padding: 48vh 1rem 2rem;
+  }
+
+  .hero::before {
+    background-position: center top;
+  }
+
+  .hero::after {
+    background:
+      linear-gradient(180deg, rgba(5, 5, 5, 0.02) 0%, rgba(5, 5, 5, 0.2) 38%, rgba(5, 5, 5, 0.92) 78%),
+      linear-gradient(90deg, rgba(5, 5, 5, 0.6), rgba(5, 5, 5, 0.18));
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero .eyebrow {
+    margin-bottom: 0.65rem;
+  }
+
+  h1 {
+    font-size: clamp(3.25rem, 19vw, 5.9rem);
+    line-height: 0.88;
+  }
+
+  .hero-copy {
+    margin: 0.85rem 0 1.15rem;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .cta-row {
+    gap: 0.65rem;
+  }
+
+  .hero .btn {
+    width: 100%;
+    padding: 0.85rem 1rem;
+  }
+
   .grid.two,
   .grid.three,
   .split,
@@ -448,5 +496,15 @@ textarea {
 
   .photo-card {
     min-height: 470px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    padding-top: 42vh;
+  }
+
+  h1 {
+    font-size: clamp(2.95rem, 18vw, 4.8rem);
   }
 }
