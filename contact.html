@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Aaron The Uplifter™</title>
+  <meta name="description" content="Contact and booking for Aaron The Uplifter™.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="header">
+      <a class="logo" href="index.html">Aaron The<br><span>Uplifter™</span></a>
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="live.html">Live</a>
+        <a href="about.html">About</a>
+        <a href="press.html">Press</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="eyebrow">Contact</div>
+        <h1>Book Aaron</h1>
+        <p>For music, press, performance, appearances, collaborations, and album-era opportunities.</p>
+      </section>
+
+      <section class="section split">
+        <div>
+          <h2>Let’s build the next moment</h2>
+          <p>Use this form block for management, booking, press, and partnership inquiries. It is front-end ready and can be connected to a form service or backend later.</p>
+        </div>
+        <form class="form" action="mailto:booking@example.com" method="post" enctype="text/plain">
+          <input aria-label="Name" name="name" placeholder="Name" required>
+          <input aria-label="Email" name="email" type="email" placeholder="Email" required>
+          <input aria-label="Subject" name="subject" placeholder="Subject">
+          <textarea aria-label="Message" name="message" placeholder="Tell us about the opportunity" required></textarea>
+          <button class="btn" type="submit">Send inquiry</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span data-year></span> Aaron The Uplifter™</span>
+      <span>Booking & Press</span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
